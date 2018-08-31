@@ -10,7 +10,17 @@ window.addEventListener('load', async e => {
     sourceSelector.value = defaultSource;
     sourceSelector.addEventListener('change', e => {
         updateNews(e.target.value);
-    })
+    });
+
+    //to check servicewoker compatible avaliable
+    if('serviceWorker' in navigator) {
+        try{
+            navigator.serviceWorker.register('sw.js');
+            console.log('service worker register');
+        } catch(error) {
+            console.log('SW registration failed');
+        }
+    }
 });
 
 async function updateSources(){

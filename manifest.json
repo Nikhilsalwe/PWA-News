@@ -1,0 +1,11 @@
+{
+  "name": "NEWS",
+  "short_name": "NEWS",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": ".",
+  "icons": null,
+  "splash_pages": null
+}
